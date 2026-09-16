@@ -9,7 +9,7 @@
 <meta http-equiv="Expires" content="0">
 <meta name="description" content="منصة المسابقة الطلابية الفضائية — الجمعية الفلكية الأردنية">
 <title>منصة المسابقة الطلابية الفضائية — الجمعية الفلكية الأردنية</title>
-<link rel="stylesheet" href="site.css?v=20260916-final-white-2">
+<link rel="stylesheet" href="site.css?v=20260917-public-auth-clean-1">
 </head>
 <body class="light-site">
 <div class="announcement">الجمعية الفلكية الأردنية • منصة المسابقة الطلابية الفضائية • الصفان التاسع والعاشر</div>
@@ -21,7 +21,7 @@
   <nav>
     <a href="#register">التسجيل</a><a href="#tracks">المسارات</a><a href="#steps">آلية المشاركة</a><a href="#resources">المواد</a><a href="#faq">الأسئلة الشائعة</a>
   </nav>
-  <div class="header-actions"><button class="btn ghost" data-open-demo>تسجيل الدخول</button><button class="btn primary" data-open-demo>سجل الآن</button></div>
+  <div class="header-actions"><button class="btn ghost" data-open-auth="login">تسجيل الدخول</button><button class="btn primary" data-open-auth="register">سجل الآن</button></div>
 </header>
 
 <main id="top">
@@ -30,7 +30,7 @@
     <span class="eyebrow">من الأردن إلى الفضاء</span>
     <h1>مسابقتك الفضائية<br><em>تبدأ من هنا</em></h1>
     <p>منصة رسمية وسهلة لتسجيل نحو <b>300 طالب وطالبة</b> من الصفين التاسع والعاشر، بمشاركة فردية أو فريق من 2–3 طلاب، وتحت إشراف معلم.</p>
-    <div class="hero-actions"><button class="btn primary big" data-open-demo>سجل الآن</button><a class="btn big" href="#register">كيف أشارك؟</a></div>
+    <div class="hero-actions"><button class="btn primary big" data-open-auth="register">سجل الآن</button><a class="btn big" href="#register">كيف أشارك؟</a></div>
     <div class="chips"><span>≈300 طالب وطالبة</span><span>الصفان 9–10</span><span>فردي أو فريق 2–3</span><span>معلم مشرف</span></div>
   </div>
   <div class="hero-art" aria-hidden="true">
@@ -43,14 +43,14 @@
   <article><small>حالة التسجيل</small><b><i></i> المعاينة متاحة الآن</b></article>
   <article><small>الفئة المستهدفة</small><b>الصفان التاسع والعاشر</b></article>
   <article><small>المواعيد الرسمية</small><b>تُنشر بعد اعتماد إدارة المسابقة</b></article>
-  <button class="btn primary" data-open-demo>ابدأ التجربة</button>
+  <button class="btn primary" data-open-auth="register">ابدأ التسجيل</button>
 </section>
 
 <section class="section registration" id="register">
   <div class="section-head"><span>بوابة التسجيل</span><h2>اختر طريقة مشاركتك وابدأ ملفك</h2><p>كل شيء واضح من البداية: بياناتك، المشرف، المسار، المشروع، الملفات، التعهد، ثم المراجعة النهائية.</p></div>
   <div class="participation-cards">
-    <article><div class="icon">👤</div><small>INDIVIDUAL</small><h3>مشاركة فردية</h3><p>طالب أو طالبة يسجل المشروع ويكمل الخطوات مع معلم مشرف.</p><button class="btn primary" data-open-demo>ابدأ مشاركة فردية</button></article>
-    <article><div class="icon">👥</div><small>TEAM • 2–3</small><h3>مشاركة فريق</h3><p>فريق من طالبين أو ثلاثة من المدرسة مع مشرف واحد للمشروع.</p><button class="btn teal" data-open-demo>ابدأ مشاركة فريق</button></article>
+    <article><div class="icon">👤</div><small>INDIVIDUAL</small><h3>مشاركة فردية</h3><p>طالب أو طالبة يسجل المشروع ويكمل الخطوات مع معلم مشرف.</p><button class="btn primary" data-open-auth="register">ابدأ مشاركة فردية</button></article>
+    <article><div class="icon">👥</div><small>TEAM • 2–3</small><h3>مشاركة فريق</h3><p>فريق من طالبين أو ثلاثة من المدرسة مع مشرف واحد للمشروع.</p><button class="btn teal" data-open-auth="register">ابدأ مشاركة فريق</button></article>
   </div>
 </section>
 
@@ -109,37 +109,41 @@
 <footer>
   <div class="footer-brand"><img src="https://raw.githubusercontent.com/omaralbaz9/Space-Week-Student-Platform/v2-foundation-public/docs/preview/assets/jas-logo.png" alt="شعار الجمعية الفلكية الأردنية"><div><b>الجمعية الفلكية الأردنية</b><span>منصة المسابقة الطلابية الفضائية</span></div></div>
   <div class="footer-links"><a href="#register">التسجيل</a><a href="#tracks">المسارات</a><a href="#resources">المواد التعليمية</a></div>
-  <button class="btn primary" data-open-demo>تسجيل الدخول / التسجيل</button>
+  <button class="btn primary" data-open-auth="register">إنشاء حساب</button>
 </footer>
 
-<section class="demo" aria-hidden="true" data-demo>
-  <div class="demo-backdrop" data-close-demo></div>
-  <div class="demo-window" role="dialog" aria-modal="true" aria-label="تجربة المنصة">
-    <header class="demo-head"><div><small>نسخة تجريبية محلية</small><h2>تجربة التسجيل والمنصة</h2></div><button class="close" data-close-demo>×</button></header>
-    <div class="login-screen" data-login-screen>
-      <section><span class="eyebrow">حسابات تجريبية</span><h2>اختر حسابًا لمشاهدة التجربة</h2><p>هذه بيانات وهمية فقط، ولا يتم إرسال أي كلمة مرور أو ملف إلى الإنترنت.</p>
-        <div class="demo-accounts">
-          <button data-fill="student_demo"><b>طالب</b><code>student_demo</code><code>Demo@2026</code></button>
-          <button data-fill="team_demo"><b>فريق</b><code>team_demo</code><code>Team@2026</code></button>
-          <button data-fill="admin_demo"><b>إدارة</b><code>admin_demo</code><code>AdminDemo@2026</code></button>
-        </div>
-      </section>
-      <form data-login-form><h3>تسجيل الدخول التجريبي</h3><label>اسم المستخدم<input name="username" autocomplete="off"></label><label>كلمة المرور<input name="password" type="password" data-demo-only autocomplete="off"></label><p class="form-msg" data-login-msg></p><button class="btn primary wide">دخول</button></form>
-    </div>
-    <div class="app-screen" data-app-screen hidden>
-      <aside><div class="user-card"><span data-avatar>س</span><div><b data-user-name>سارة أحمد الخطيب</b><small data-user-role>طالبة</small></div></div><nav data-student-nav><button data-view="student-dashboard" class="active">لوحة الطالب</button><button data-view="student-project">المشروع والرفع</button><button data-view="student-review">المراجعة</button></nav><nav data-admin-nav hidden><button data-view="admin-dashboard" class="active">لوحة الإدارة</button><button data-view="admin-participants">المشاركات</button></nav><button class="logout" data-logout>تسجيل الخروج</button></aside>
-      <main class="app-main">
-        <section class="role-panel active" data-role-panel="student" data-view-panel="student-dashboard"><div class="panel-title"><span>MISSION CONTROL</span><h2>مرحبًا، <b data-student-name>سارة</b></h2><p>تابع اكتمال مشاركتك من مكان واحد.</p></div><div class="metrics"><article><small>الإنجاز</small><b data-progress>72%</b></article><article><small>نوع المشاركة</small><b>فردية</b></article><article><small>المسار</small><b>رحلة إلى المريخ</b></article><article><small>الحالة</small><b>مسودة</b></article></div><div class="progress-list"><article><b>✓</b><span>بيانات الطالب مكتملة</span></article><article><b>✓</b><span>المعلم المشرف مكتمل</span></article><article><b>03</b><span>اختيار المسار</span></article><article><b>04</b><span>المشروع والملفات</span></article></div></section>
-        <section class="role-panel" data-role-panel="student" data-view-panel="student-project"><div class="panel-title"><span>المشروع</span><h2>رفع المشروع</h2><p>الرفع هنا محلي للمعاينة فقط.</p></div><div class="form-grid"><label>عنوان المشروع<input value="مهمة أوريون الطلابية إلى المريخ"></label><label>وصف المشروع<textarea rows="5">تصميم تعليمي لمهمة فضائية طلابية متكاملة.</textarea></label></div><div class="upload-box"><p>PDF • DOCX • PPTX • JPG • PNG • WEBP • MP4</p><input type="file" multiple data-demo-upload data-demo-only><div data-files class="file-list"></div></div></section>
-        <section class="role-panel" data-role-panel="student" data-view-panel="student-review"><div class="panel-title"><span>المراجعة النهائية</span><h2>راجع بيانات المشاركة قبل الإرسال</h2></div><div class="review-grid"><article><small>المشارك</small><b>سارة أحمد الخطيب</b></article><article><small>المشرف</small><b>أحمد يوسف الرواشدة</b></article><article><small>المسابقة</small><b>رحلة إلى المريخ</b></article><article><small>الملفات</small><b data-review-files>0 ملف</b></article></div><label class="pledge"><input type="checkbox" data-pledge> أتعهد بصحة البيانات والالتزام بتعليمات المسابقة.</label><button class="btn primary" data-submit-demo>محاكاة الإرسال النهائي</button><p data-submit-result></p></section>
-        <section class="role-panel" data-role-panel="admin" data-view-panel="admin-dashboard"><div class="panel-title"><span>ADMIN CONTROL</span><h2>لوحة إدارة المسابقة</h2><p>بيانات تجريبية لعرض شكل لوحة التحكم.</p></div><div class="metrics"><article><small>الحسابات</small><b>300</b></article><article><small>المشاركات</small><b>184</b></article><article><small>تم الإرسال</small><b>96</b></article><article><small>الفرق</small><b>41</b></article></div><div class="admin-note">إحصاءات سريعة • متابعة الحالات • إدارة المواد • تصدير التقارير</div></section>
-        <section class="role-panel" data-role-panel="admin" data-view-panel="admin-participants"><div class="panel-title"><span>المشاركات</span><h2>متابعة الطلبة والفرق</h2></div><div class="table-wrap"><table><thead><tr><th>المشارك</th><th>النوع</th><th>المسار</th><th>المحافظة</th><th>الحالة</th></tr></thead><tbody><tr><td>سارة أحمد الخطيب</td><td>فردي</td><td>المريخ</td><td>عمّان</td><td><span class="submitted">تم الإرسال</span></td></tr><tr><td>فريق المدار الأردني</td><td>فريق</td><td>الصواريخ</td><td>إربد</td><td><span class="draft">مسودة</span></td></tr><tr><td>يزن محمود الحياري</td><td>فردي</td><td>المريخ</td><td>الزرقاء</td><td><span class="submitted">تم الإرسال</span></td></tr></tbody></table></div></section>
-      </main>
+<section class="demo" aria-hidden="true" data-auth-modal>
+  <div class="demo-backdrop" data-close-auth></div>
+  <div class="demo-window" role="dialog" aria-modal="true" aria-label="بوابة التسجيل والدخول">
+    <header class="demo-head"><div><small>بوابة الحسابات</small><h2>التسجيل والدخول</h2></div><button class="close" data-close-auth aria-label="إغلاق">×</button></header>
+    <div class="login-screen" data-auth-screen>
+      <form data-register-preview>
+        <span class="eyebrow">حساب جديد</span>
+        <h2>إنشاء حساب جديد</h2>
+        <p><b>نسخة GitHub Pages للعرض فقط.</b> هذه الحقول توضح تجربة التسجيل، ولا يتم إرسال أو حفظ أي بيانات هنا.</p>
+        <label>الاسم الرباعي<input name="full_name" autocomplete="name" placeholder="الاسم كما في السجل الرسمي"></label>
+        <label>اسم المستخدم<input name="username" autocomplete="username" placeholder="مثال: student2026"></label>
+        <label>البريد الإلكتروني<input name="email" type="email" autocomplete="email" placeholder="name@example.com"></label>
+        <label>كلمة المرور<input name="password" type="password" autocomplete="new-password"></label>
+        <label>تأكيد كلمة المرور<input name="password_confirmation" type="password" autocomplete="new-password"></label>
+        <p class="form-msg" data-register-msg></p>
+        <button class="btn primary wide">إنشاء حساب</button>
+      </form>
+      <form data-login-preview>
+        <span class="eyebrow">لديك حساب؟</span>
+        <h3>تسجيل الدخول</h3>
+        <p>في نسخة الإنتاج سيكون الدخول باسم المستخدم أو البريد الإلكتروني وكلمة المرور.</p>
+        <label>اسم المستخدم أو البريد الإلكتروني<input name="identity" autocomplete="username"></label>
+        <label>كلمة المرور<input name="password" type="password" autocomplete="current-password"></label>
+        <p class="form-msg" data-login-msg></p>
+        <button class="btn primary wide">دخول</button>
+        <button type="button" class="btn wide" data-focus-register>إنشاء حساب جديد</button>
+      </form>
     </div>
   </div>
 </section>
 <div class="toast" data-toast></div>
-<script src="site.js?v=20260916-final-white-2"></script>
-<!-- build: final-white-20260916-2 -->
+<script src="site.js?v=20260917-public-auth-clean-1"></script>
+<!-- build: public-auth-clean-20260917-1 -->
 </body>
 </html>
